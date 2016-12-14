@@ -23,9 +23,6 @@ print(polyline[2].x)
 print(polyline[3].y)
 print(polyline[0])
 print(polyline.color)
-for i,v in pairs(polyline) do
-    print(i,v)
-end
 
 opnames = {["+"] = "add", ["-"] = "sub", 
            ["*"] = "mul", ["/"] = "dvi"}
