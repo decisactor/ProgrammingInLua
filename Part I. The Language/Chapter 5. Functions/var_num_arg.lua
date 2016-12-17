@@ -4,6 +4,7 @@ print(select(2, string.find( "hello hello", " hel" )))
 
 function g ( a, b, ... )   
     print(a,b) 
+    print(#arg)
     for i,v in pairs(arg) do
         print(i,v)
     end
