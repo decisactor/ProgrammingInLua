@@ -1,0 +1,2 @@
+-- Exercise 1.5 prints its own name 
+--print(string.match( arg[0], "/.*.lua" ))

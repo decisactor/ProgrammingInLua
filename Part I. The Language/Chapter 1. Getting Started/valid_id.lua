@@ -1,0 +1,8 @@
+-- Exercise 1.4 valid identifiers
+-- local ___
+-- local _end
+-- local End
+-- local end
+-- local until?
+-- local nil
+-- local NULL

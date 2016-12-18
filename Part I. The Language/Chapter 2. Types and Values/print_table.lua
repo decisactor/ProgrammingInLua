@@ -18,7 +18,7 @@ a = nil
 b = nil
 
 a = {}
--- create 100 new entries
+-- create 1000 new entries
 for i=1,1000 do a[i] = i*2 end 
 print(a[9])
 a["x"] = 10
