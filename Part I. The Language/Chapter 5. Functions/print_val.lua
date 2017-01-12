@@ -1,3 +1,7 @@
+--[[
+    Exercise 5.3: Write a function that receives an arbitrary number of values and
+returns all of them, except the first one.]]
+
 function get_value( ... )
     local arg = table.pack(...)
     local size = arg.n
