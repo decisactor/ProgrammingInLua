@@ -41,21 +41,24 @@ coroutine.resume( co, 1, 2, 3 )
 
 co = coroutine.create(
     function (a,b)
-        coroutine.yield( a + b, a - b )
+        print(coroutine.yield( a + b, a - b ))
+        return 60, 70
     end
     )
-coroutine.resume( co, 20, 10 )    
+print(coroutine.resume( co, 20, 10, 40, 50 ))
+print(coroutine.resume( co, 20, 10, 40, 50 ))
 
 co = coroutine.create( 
     function (x) 
         print("co1", x)
-        print("co2", coroutine.yield(  ))
+        print("co2", coroutine.yield( x ))
+        return 67
     end
     )
-coroutine.resume( co, 4, 5, 6 )
 
 coroutine.resume( co, "hi" )
-
+print(coroutine.resume( co, 4, 5, 6 ))
+print(coroutine.resume( co, 4, 5, 6 ))
 
 co = coroutine.create( 
     function ()
